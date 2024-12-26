@@ -26,12 +26,13 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.title = "ProductList"
         val viewModel: MyViewModel by viewModels()
         Log.d("MainActivityram" ,"this is it $viewModel")
+        Log.d("MainActivitysan" ,"this is it $viewModel")
 
         viewModel.getProductViewModel()
-
         viewModel.productList.observe(this , Observer {
             binding.recyclerView.layoutManager = LinearLayoutManager(this)
-            binding.recyclerView.adapter = ProductListAdapter(it.body()!!ram)
+git             binding.recyclerView.adapter = ProductListAdapter(it.body()!!san)
+
         })
 
     }

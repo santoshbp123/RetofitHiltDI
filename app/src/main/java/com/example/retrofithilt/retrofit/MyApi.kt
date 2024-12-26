@@ -5,6 +5,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface MyApi {
-    @GET("/productsram")
+
+    @GET("/productssan")
     suspend fun doNetworkCall(): Response<List<ProductItem>>
 }
